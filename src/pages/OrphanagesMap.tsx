@@ -57,8 +57,8 @@ export default function OrphanagesMap() {
               y: 0.8,
             }}
             coordinate={{
-              latitude: orphanage.latitude,
-              longitude: orphanage.longitude,
+              latitude: Number(orphanage.latitude),
+              longitude: Number(orphanage.longitude),
             }}
           >
             <Callout tooltip onPress={() => handleNavigateToOphanageDetails(orphanage.id)}>

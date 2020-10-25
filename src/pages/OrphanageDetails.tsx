@@ -86,8 +86,8 @@ export default function OrphanageDetails() {
             <Marker
               icon={mapMarkerImg}
               coordinate={{
-                latitude: orphanage.latitude,
-                longitude: orphanage.longitude,
+                latitude: Number(orphanage.latitude),
+                longitude: Number(orphanage.longitude),
               }}
             />
           </MapView>
