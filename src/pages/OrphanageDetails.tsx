@@ -71,9 +71,9 @@ export default function OrphanageDetails() {
 
         <View style={styles.mapContainer}>
           <MapView
-            initialRegion={{
-              latitude: orphanage.latitude,
-              longitude: orphanage.longitude,
+            region={{
+              latitude: Number(orphanage.latitude),
+              longitude: Number(orphanage.longitude),
               latitudeDelta: 0.008,
               longitudeDelta: 0.008,
             }}

@@ -34,7 +34,7 @@ export default function SelectMapPosition() {
         {position.latitude !== 0 && (
           <Marker
             icon={mapMarkerImg}
-            coordinate={{ latitude: position.latitude, longitude: position.longitude }}
+            coordinate={{ latitude: Number(position.latitude), longitude: Number(position.longitude) }}
           />
         )}
       </MapView>
